@@ -20,6 +20,9 @@
 }
 
 /* Стили для header */
+.header {
+  margin-bottom: 53px;
+}
 
 /* Стили для блока info блока header */
 .info {
@@ -320,3 +323,223 @@
 .user-navigation__button_checkout:focus {
   background-color: #518534;
 }
+
+/* Стили для блока с навигацией по товарам */
+.products-navigation__list {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-template-rows: repeat(3, 180px);
+  column-gap: 30px;
+  row-gap: 28px;
+  list-style-type: none;
+}
+
+.products-navigation__item {
+  padding: 20px 37px 33px 25px;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.products-navigation__item_materials, .products-navigation__item_delivery {
+  background-color: #FFBF47;
+  position: relative;
+}
+
+.products-navigation__item_materials::before {
+  content: '';
+  width: 90px;
+  height: 90px;
+  background-image: url(../images/icon-materials.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 45px;
+  right: 36px;
+}
+
+.products-navigation__item_delivery::before {
+  content: '';
+  width: 90px;
+  height: 90px;
+  background-image: url(../images/icon-delivery.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 45px;
+  right: 36px;
+}
+
+.products-navigation__item_tools {
+  background-color: #3BBCE3;
+  position: relative;
+}
+
+.products-navigation__item_tools::before {
+  content: '';
+  width: 90px;
+  height: 90px;
+  background-image: url(../images/icon-tools.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 45px;
+  right: 36px;
+}
+
+.products-navigation__item_equipment {
+  background-color: #DC91D8;
+  position: relative;
+}
+
+.products-navigation__item_equipment::before {
+  content: '';
+  width: 90px;
+  height: 90px;
+  background-image: url(../images/icon-equipment.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 45px;
+  right: 36px;
+}
+
+.products-navigation__item_discounts {
+  background-color: #8ED78F;
+  position: relative;
+}
+
+.products-navigation__item_discounts::before {
+  content: '';
+  width: 90px;
+  height: 90px;
+  background-image: url(../images/icon-discounts.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 45px;
+  right: 36px;
+}
+
+.products-navigation__item-title {
+  margin: 0;
+  max-width: 200px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.products-navigation__item-button {
+  width: 180px;
+  padding-left: 33px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  position: relative;
+}
+
+.products-navigation__item-button::before {
+  content: '';
+  width: 8px;
+  height: 13px;
+  background-image: url(../images/icon-stroke.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+
+/* Стили для слайдера */
+.products-navigation__slider {
+  grid-row: 2 / 4;
+  grid-column: 1 / 3;
+}
+
+.products-navigation__slider-list {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.products-navigation__slider-item {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-left: 52px;
+  padding-bottom: 48px;
+  display: block;
+  background-image: url(../images/slider-drills.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.products-navigation__slider-title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-family: 'Fira Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.products-navigation__slider-text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.products-navigation__slider-scroll-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(41, 52, 73, 0.6);
+  background-image: url(../images/icon-stroke.svg);
+  background-size: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.slider-scroll-button_left {
+  position: absolute;
+  top: 172px;
+  left: 20px;
+  transform: rotate(180deg);
+}
+
+.slider-scroll-button_right {
+  position: absolute;
+  top: 172px;
+  right: 17px;
+}
+
