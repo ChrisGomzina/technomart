@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+
+.page {
+  margin: 0;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-weight: 400;
+}
+
+/* Стили для header */
+
+/* Стили для блока info блока header */
+.info {
+  background-color: #F3F7F9;
+}
+
+.info__container {
+  max-width: 1165px;
+  margin: 0 auto;
+  padding: 14px 0;
+  padding-bottom: 13px;
+  display: flex;
+  align-items: center;
+  row-gap: 15px;
+  flex-wrap: wrap;
+}
+
+.info__title {
+  margin: 0;
+  margin-right: 15px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #EE3643;
+}
+
+.info__address {
+  margin: 0;
+  margin-left: auto;
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425C;
+}
+
+.info__telefone {
+  margin-left: 58px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #293449;
+  position: relative;
+}
+
+.info__telefone::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/icon-phone.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: -24px;
+}
+
+.info__telefone:hover {
+  opacity: 0.7;
+}
+
+.info__telefone:active {
+  opacity: 0.5;
+}
+
+.info__telefone:focus {
+  outline: 2px solid #3D546F;
+}
+
+/* Стили для блока search блока header  */
+.search {
+  background-color: #293449;
+}
+
+.search__container {
+  max-width: 1171px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.icon-link {
+  display: inline-block;
+}
+
+.search__input {
+  width: 717px;
+  padding-top: 5px;
+  padding-left: 53px;
+  padding-bottom: 8px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  box-sizing: border-box;
+  border: none;
+  background-color: #293449;
+}
+
+.search__input::placeholder {
+  color: #FFFFFF;
+}
+
+
