@@ -2,6 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page {
   margin: 0;
   font-family: 'PT Sans', 'Arial', sans-serif;
@@ -81,7 +92,7 @@
   outline: 2px solid #000000;
 }
 
-/* Стили для блока search блока header  */
+/* Стили для блока search блока header */
 .search {
   background-color: #293449;
 }
@@ -148,7 +159,7 @@
 
 .search__button {
   padding-left: 25px;
-  font-family: 'PT Sans', 'Arial', sans-serif;;
+  font-family: 'PT Sans', 'Arial', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
@@ -183,4 +194,129 @@
 
 .search__button:focus {
   outline: 2px solid #000000;
+}
+
+/* Стили для блока navigation блока header */
+.navigation__container {
+  background-color: #3D546F;
+}
+
+.navigation {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Стили для навигации по сайту */
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.navigation__link {
+  display: inline-block;
+  padding-top: 19px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  outline: none;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.navigation__link:hover {
+  background-color: #32425C;
+  color: #C5C5C5;
+}
+
+.navigation__link:active {
+  background-color: #32425C;
+}
+
+.navigation__link:focus {
+  background-color: #32425C;
+}
+
+/* Стили для пользовательской навигации */
+.user-navigation__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  list-style-type: none;
+}
+
+.user-navigation__button_favorite, .user-navigation__button_basket {
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.user-navigation__button_favorite:hover, .user-navigation__button_basket:hover {
+  opacity: 0.7;
+}
+
+.user-navigation__button_favorite:active, .user-navigation__button_basket:active {
+  opacity: 0.5;
+}
+
+.user-navigation__button_favorite:focus, .user-navigation__button_basket:focus {
+  outline: 2px solid #000000;
+}
+
+.user-navigation__button_favorite {
+  width: 16px;
+  height: 18px;
+  background-image: url(../images/icon-favorite.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.user-navigation__button_basket {
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/icon-basket.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.user-navigation__button_checkout {
+  padding: 12px 12px;
+  margin-right: 7px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #63A63E;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-navigation__button_checkout:hover {
+  background-color: #5FBB2D;
+}
+
+.user-navigation__button_checkout:active {
+  background-color: #518534;
+}
+
+.user-navigation__button_checkout:focus {
+  background-color: #518534;
 }
