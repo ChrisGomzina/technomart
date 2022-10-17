@@ -95,19 +95,60 @@
       </li>
 
       <!-- Слайдер -->
-      <li class="products-navigation__slider">
-        <ul class="products-navigation__slider-list">
+      <li class="slider">
+        <ul class="slider__list">
 
           <!-- Первый слайд -->
-          <li class="products-navigation__slider-item">
-            <h2 class="products-navigation__slider-title">Дрели</h2>
-            <p class="products-navigation__slider-text">Соседям на радость!</p>
-            <button class="products-navigation__slider-scroll-button slider-scroll-button_left" type="button"></button>
-            <button class="products-navigation__slider-scroll-button slider-scroll-button_right" type="button"></button>
-            <a class="products-navigation__slider-button" href="#">Открыть каталог</a>
+          <li class="slider__item slider__item_drills">
+            <h2 class="slider__title">Дрели</h2>
+            <p class="slider__text">Соседям на радость!</p>
+            <button class="slider__scroll-button slider__scroll-button_left" type="button">
+              <span class="visually-hidden">Листать влево.</span>
+            </button>
+            <button class="slider__scroll-button slider__scroll-button_right" type="button">
+              <span class="visually-hidden">Листать вправо.</span>
+            </button>
+            <a class="slider__button" href="#">Открыть каталог</a>
+
+            <!-- Пагинация для слайдера -->
+            <div class="slider__pagination-container">
+              <button class="slider__button-dot slider__button_active" type="button">
+                <span class="visually-hidden">1 слайд.</span>
+              </button>
+              <button class="slider__button-dot" type="button">
+                <span class="visually-hidden">2 слайд.</span>
+              </button>
+              <button class="slider__button-dot" type="button">
+                <span class="visually-hidden">3 слайд.</span>
+              </button>
+            </div>
           </li>
 
+          <!-- Второй слайд -->
+          <li class="slider__item slider__item_perforators slider__item_hidden">
+            <h2 class="slider__title">Перфораторы</h2>
+            <p class="slider__text">Настроящие мужские игрушки</p>
+            <button class="slider__scroll-button slider__scroll-button_left" type="button">
+              <span class="visually-hidden">Листать влево.</span>
+            </button>
+            <button class="slider__scroll-button slider__scroll-button_right" type="button">
+              <span class="visually-hidden">Листать вправо.</span>
+            </button>
+            <a class="slider__button" href="#">Открыть каталог</a>
 
+            <!-- Пагинация для слайдера -->
+            <div class="slider__pagination-container">
+              <button class="slider__button-dot" type="button">
+                <span class="visually-hidden">1 слайд.</span>
+              </button>
+              <button class="slider__button-dot slider__button_active" type="button">
+                <span class="visually-hidden">2 слайд.</span>
+              </button>
+              <button class="slider__button-dot" type="button">
+                <span class="visually-hidden">3 слайд.</span>
+              </button>
+            </div>
+          </li>
         </ul>
 
       </li>
