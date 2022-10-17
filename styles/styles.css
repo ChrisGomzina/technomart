@@ -78,7 +78,7 @@
 }
 
 .info__telefone:focus {
-  outline: 2px solid #3D546F;
+  outline: 2px solid #000000;
 }
 
 /* Стили для блока search блока header  */
@@ -87,30 +87,100 @@
 }
 
 .search__container {
-  max-width: 1171px;
+  max-width: 1177px;
   margin: 0 auto;
   display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .icon-link {
   display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 3px;
+}
+
+.icon-link:focus {
+  outline: 2px solid #000000;
 }
 
 .search__input {
   width: 717px;
-  padding-top: 5px;
+  margin-left: 223px;
+  padding-top: 8px;
   padding-left: 53px;
-  padding-bottom: 8px;
+  padding-bottom: 13px;
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 24px;
+  color: #293449;
   box-sizing: border-box;
+  outline: none;
   border: none;
   background-color: #293449;
+  background-image: url(../images/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: top 11px left 20px;
 }
 
 .search__input::placeholder {
   color: #FFFFFF;
 }
 
+.search__input:active {
+  background-color: #F1F5F7;
+  background-image: url(../images/icon-search-focus.svg);
+}
 
+.search__input:active::placeholder {
+  color: #C5C5C5;
+}
+
+.search__input:focus {
+  background-color: #F1F5F7;
+  background-image: url(../images/icon-search-focus.svg);
+}
+
+.search__input:focus::placeholder {
+  color: #C5C5C5;
+}
+
+.search__button {
+  padding-left: 25px;
+  font-family: 'PT Sans', 'Arial', sans-serif;;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #F1F5F7;
+  border: none;
+  background-color: #293449;
+  cursor: pointer;
+  position: relative;
+}
+
+.search__button::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/icon-login.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 14px;
+  left: 0;
+}
+
+.search__button:hover {
+  opacity: 0.7;
+}
+
+.search__button:active {
+  opacity: 0.5;
+}
+
+.search__button:focus {
+  outline: 2px solid #000000;
+}
