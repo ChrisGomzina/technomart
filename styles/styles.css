@@ -458,6 +458,18 @@
   position: relative;
 }
 
+.products-navigation__item-button:hover {
+  opacity: 0.7;
+}
+
+.products-navigation__item-button:active {
+  opacity: 0.5;
+}
+
+.products-navigation__item-button:focus {
+  outline: 2px solid #000000;
+}
+
 .products-navigation__item-button::before {
   content: '';
   width: 8px;
@@ -546,6 +558,18 @@
   cursor: pointer;
 }
 
+.slider__scroll-button:hover {
+  opacity: 0.7;
+}
+
+.slider__scroll-button:active {
+  opacity: 0.5;
+}
+
+.slider__scroll-button:focus {
+  outline: 2px solid #000000;
+}
+
 .slider__scroll-button_left {
   position: absolute;
   top: 172px;
@@ -568,8 +592,21 @@
   text-transform: uppercase;
   color: #FFFFFF;
   text-decoration: none;
+  outline: none;
   background-color: #EE3643;
   border-radius: 2px;
+}
+
+.slider__button:hover {
+  background-color: #CA2C37;
+}
+
+.slider__button:active {
+  background-color: #BA2732;
+}
+
+.slider__button:focus {
+  background-color: #BA2732;
 }
 
 .slider__pagination-container {
@@ -595,3 +632,59 @@
   background-color: #FFFFFF;
 }
 
+.slider__button-dot:hover {
+  opacity: 0.7;
+}
+
+.slider__button-dot:active {
+  opacity: 0.5;
+}
+
+.slider__button-dot:focus {
+  outline: 2px solid #000000;
+}
+
+/* Стили для блока services */
+.services {
+  padding: 52px 0;
+  background-image: url(../images/services-background.png);
+  color: #293449;
+}
+
+.services__title {
+  max-width: 556px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  font-family: 'Fira Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.services__text {
+  max-width: 556px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.services__list {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.services__item {
+  max-width: 370px;
+  padding: 167px 44px 0 26px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
