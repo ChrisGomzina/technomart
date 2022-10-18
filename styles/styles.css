@@ -737,3 +737,62 @@
   top: 36px;
   left: 31px;
 }
+
+/* Стили для блока с информацией */
+.information {
+  width: 1170px;
+  padding: 52px 0;
+  margin: 0 auto;
+  color: #293449;
+  display: flex;
+  gap: 170px;
+}
+
+.information__about, .information__contacts {
+  max-width: 500px;
+}
+
+.information__title {
+  margin: 0;
+  margin-bottom: 23px;
+  font-family: 'Fira Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.information__text {
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.information__button {
+  margin-top: 24px;
+  padding: 13px 45px;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #EE3643;
+  border-radius: 2px;
+  outline: none;
+  color: #FFFFFF;
+}
+
+.information__button:hover {
+  background-color: #CA2C37;
+}
+
+.information__button:active {
+  background-color: #BA2732;
+}
+
+.information__button:focus {
+  background-color: #BA2732;
+}
