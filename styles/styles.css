@@ -881,6 +881,17 @@
   line-height: 24px;
   color: #FFD180;
   text-decoration: none;
+  outline: none;
+}
+
+.footer__mail:hover {
+  color: #FFBF47;
+  text-decoration: underline;
+}
+
+.footer__mail:focus {
+  color: #FFBF47;
+  text-decoration: underline;
 }
 
 .subscription__form {
@@ -910,6 +921,14 @@
   border-bottom-left-radius: 2px;
 }
 
+.subscription__input:hover {
+  opacity: 0.8;
+}
+
+.subscription__input:focus {
+  outline: 1px solid #FFBF47;
+}
+
 .subscription__button {
   width: 40px;
   height: 40px;
@@ -920,6 +939,8 @@
   border: none;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
+  cursor: pointer;
+  outline: none;
 }
 
 .subscription__button:hover {
@@ -933,4 +954,27 @@
 .subscription__button:focus {
   background-color: #5FBB2D;
 }
+
+.footer__copyright {
+  margin-top: 21px;
+  margin-bottom: 21px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.footer__link {
+  color: #FFD180;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: #FFBF47;
+  text-decoration: underline;
+}
+
+.footer__link:focus {
+  color: #FFBF47;
+  text-decoration: underline;
+}
+
 
