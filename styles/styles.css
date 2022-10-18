@@ -644,6 +644,109 @@
   outline: 2px solid #000000;
 }
 
+/* Стили для блока catalog */
+.catalog {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.catalog__title {
+  font-family: 'Fira Sans', 'Arial', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #293449;
+}
+
+/* Стили для фильтров */
+.filter {
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__fieldset {
+  padding: 0;
+  border: none;
+}
+
+.filter__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.filter__range {
+  width: 220px;
+  height: 40px;
+  background-image: url(../images/filter-background.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter__range-scale {
+  width: 180px;
+  height: 2px;
+  background-color: #3D546F;
+  position: relative;
+}
+
+.filter__range-bar {
+  height: 2px;
+  background-color: #5FBB2D;
+}
+
+.filter__range-toggle {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border: 2px solid #3D546F;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.toggle_min {
+  top: -10px;
+  left: 0;
+}
+
+.toggle_max {
+  top: -10px;
+  left: 138px;
+}
+
+.filter__range-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filter__range-input {
+  width: 95px;
+  padding: 11px 16px;
+  box-sizing: border-box;
+  border: none;
+  background-image: url(../images/filter-background.png);
+  background-size: cover;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #293449;
+  appearance: textfield;
+}
+
+.filter__range-input::-webkit-outer-spin-button,
+.filter__range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
 /* Стили для блока services */
 .services {
   padding: 52px 0;

@@ -154,6 +154,42 @@
       </li>
     </ul>
 
+    <section class="catalog">
+      <h1 class="catalog__title">ПЕРФОРАТОРЫ</h1>
+      <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
+
+        <fieldset class="filter__fieldset">
+          <legend class="filter__title">ЦЕНА</legend>
+
+          <div class="filter__range">
+            <div class="filter__range-scale">
+              <div class="filter__range-bar" style="left: 0px; width: 138px">
+                <button class="filter__range-toggle toggle_min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="filter__range-toggle toggle_max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter__range-container">
+            <label class="filter__range-label" for="min-price">
+              <input class="filter__range-input" type="number" value="0" name="min-price" id="min-price">
+            </label>
+            <span class="filter__range-span">-</span>
+            <label class="filter__range-label" for="max-price">
+              <input class="filter__range-input" type="number" value="30000" name="max-price" id="max-price">
+            </label>
+          </div>
+
+        </fieldset>
+
+
+      </form>
+    </section>
+
     <!-- Блок services -->
     <section class="services">
 
@@ -249,8 +285,6 @@
       <p class="footer__copyright">Разработано — <a class="footer__link" href="https://htmlacademy.ru/">htmlacademy.ru</a></p>
     </div>
   </footer>
-
-
 
 </body>
 </html>
