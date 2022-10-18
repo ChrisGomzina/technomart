@@ -741,7 +741,8 @@
 /* Стили для блока с информацией */
 .information {
   width: 1170px;
-  padding: 52px 0;
+  padding-top: 52px;
+  padding-bottom: 49px;
   margin: 0 auto;
   color: #293449;
   display: flex;
@@ -796,3 +797,140 @@
 .information__button:focus {
   background-color: #BA2732;
 }
+
+/* Стили для футера */
+.footer {
+  background: linear-gradient(to bottom, #32425C 0 216px,  #293449 216px 276px);
+  color: #F3F7F9;
+}
+
+.footer__container {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__wrapper {
+  max-width: 330px;
+  padding-bottom: 33px;
+}
+
+.footer__wrapper:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer__logo-link {
+  margin-bottom: 18px;
+  display: inline-block;
+}
+
+.footer__logo-link:focus {
+  outline: 2px solid #000000;
+}
+
+.footer__address {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer__socials {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 3px;
+}
+
+.footer__social-link {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+
+.footer__social-link:hover {
+  background-color: #293449;
+}
+
+.footer__social-link:active {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer__social-link:focus {
+  background-color: #293449;
+}
+
+.footer__text {
+  margin-top: 29px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.footer__mail {
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFD180;
+  text-decoration: none;
+}
+
+.subscription__form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.subscription__label {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 2px;
+}
+
+.subscription__container {
+  margin: 0;
+  display: flex;
+}
+
+.subscription__input {
+  width: 220px;
+  padding: 10px 0 12px 16px;
+  box-sizing: border-box;
+  border: 1px solid #63A63E;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.subscription__button {
+  width: 40px;
+  height: 40px;
+  background: #63A63E;
+  background-image: url(../images/icon-backet-white.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.subscription__button:hover {
+  background-color: #5FBB2D;
+}
+
+.subscription__button:active {
+  background-color: #518534;
+}
+
+.subscription__button:focus {
+  background-color: #5FBB2D;
+}
+
