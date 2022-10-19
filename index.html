@@ -157,101 +157,130 @@
     <section class="catalog">
       <h1 class="catalog__title">ПЕРФОРАТОРЫ</h1>
 
-      <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="filter__container">
+        <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
 
-        <!-- Фильтр по цене -->
-        <fieldset class="filter__fieldset">
-          <legend class="filter__title">ЦЕНА</legend>
-          <div class="filter__range">
-            <div class="filter__range-scale">
-              <div class="filter__range-bar" style="left: 0px; width: 138px">
-                <button class="filter__range-toggle toggle_min" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <button class="filter__range-toggle toggle_max" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
+          <!-- Фильтр по цене -->
+          <fieldset class="filter__fieldset">
+            <legend class="filter__title">ЦЕНА</legend>
+            <div class="filter__range">
+              <div class="filter__range-scale">
+                <div class="filter__range-bar" style="left: 0px; width: 138px">
+                  <button class="filter__range-toggle toggle_min" type="button">
+                    <span class="visually-hidden">Изменить минимальную цену.</span>
+                  </button>
+                  <button class="filter__range-toggle toggle_max" type="button">
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
+                  </button>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="filter__range-container">
-            <label class="filter__range-label" for="min-price">
-              <input class="filter__range-input" type="number" value="0" name="min-price" id="min-price">
-            </label>
-            <span class="filter__range-span">-</span>
-            <label class="filter__range-label" for="max-price">
-              <input class="filter__range-input" type="number" value="30000" name="max-price" id="max-price">
-            </label>
-          </div>
-        </fieldset>
+            <div class="filter__range-container">
+              <label class="filter__range-label" for="min-price">
+                <input class="filter__range-input" type="number" value="0" name="min-price" id="min-price">
+              </label>
+              <span class="filter__range-span">-</span>
+              <label class="filter__range-label" for="max-price">
+                <input class="filter__range-input" type="number" value="30000" name="max-price" id="max-price">
+              </label>
+            </div>
+          </fieldset>
 
-        <!-- Фильтр по производителям -->
-        <fieldset class="filter__fieldset filter__fieldset_manufacturer">
-          <ledend class="filter__title">ПРОИЗВОДИТЕЛИ</ledend>
-          <ul class="filter__checkbox-list">
-            <li class="filter__checkbox-item">
-              <label class="filter__checkbox-container">
-                <input class="visually-hidden filter__checkbox-input" type="checkbox" name="bosch" checked>
-                <span class="filter__checkbox-mark"></span>
-                <span class="filter__checkbox-label">BOSCH</span>
-              </label>
-            </li>
-            <li class="filter__checkbox-item">
-              <label class="filter__checkbox-container">
-                <input class="visually-hidden filter__checkbox-input" type="checkbox" name="interskol">
-                <span class="filter__checkbox-mark"></span>
-                <span class="filter__checkbox-label">ИНТЕРСКОЛ</span>
-              </label>
-            </li>
-            <li class="filter__checkbox-item">
-              <label class="filter__checkbox-container">
-                <input class="visually-hidden filter__checkbox-input" type="checkbox" name="makita" checked>
-                <span class="filter__checkbox-mark"></span>
-                <span class="filter__checkbox-label">MAKIta</span>
-              </label>
-            </li>
-            <li class="filter__checkbox-item">
-              <label class="filter__checkbox-container">
-                <input class="visually-hidden filter__checkbox-input" type="checkbox" name="dewalt">
-                <span class="filter__checkbox-mark"></span>
-                <span class="filter__checkbox-label">Dewalt</span>
-              </label>
-            </li>
-            <li class="filter__checkbox-item">
-              <label class="filter__checkbox-container">
-                <input class="visually-hidden filter__checkbox-input" type="checkbox" name="hitachi">
-                <span class="filter__checkbox-mark"></span>
-                <span class="filter__checkbox-label">Hitachi</span>
-              </label>
+          <!-- Фильтр по производителям -->
+          <fieldset class="filter__fieldset filter__fieldset_manufacturer">
+            <ledend class="filter__title">ПРОИЗВОДИТЕЛИ</ledend>
+            <ul class="filter__checkbox-list">
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-container">
+                  <input class="visually-hidden filter__checkbox-input" type="checkbox" name="bosch" checked>
+                  <span class="filter__checkbox-mark"></span>
+                  <span class="filter__checkbox-label">BOSCH</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-container">
+                  <input class="visually-hidden filter__checkbox-input" type="checkbox" name="interskol">
+                  <span class="filter__checkbox-mark"></span>
+                  <span class="filter__checkbox-label">ИНТЕРСКОЛ</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-container">
+                  <input class="visually-hidden filter__checkbox-input" type="checkbox" name="makita" checked>
+                  <span class="filter__checkbox-mark"></span>
+                  <span class="filter__checkbox-label">MAKIta</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-container">
+                  <input class="visually-hidden filter__checkbox-input" type="checkbox" name="dewalt">
+                  <span class="filter__checkbox-mark"></span>
+                  <span class="filter__checkbox-label">Dewalt</span>
+                </label>
+              </li>
+              <li class="filter__checkbox-item">
+                <label class="filter__checkbox-container">
+                  <input class="visually-hidden filter__checkbox-input" type="checkbox" name="hitachi">
+                  <span class="filter__checkbox-mark"></span>
+                  <span class="filter__checkbox-label">Hitachi</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!-- Фильтр по типу питания -->
+          <fieldset class="filter__fieldset">
+            <legend class="filter__title">ПИТАНИЕ</legend>
+            <ul class="filter__radio-list">
+              <li class="filter__radio-item">
+                <label class="filter__radio-container">
+                  <input class="visually-hidden filter__radio-input" type="radio" name="power" value="battery" checked>
+                  <span class="filter__radio-mark"></span>
+                  <span class="filter__radio-label">Аккумуляторные</span>
+                </label>
+              </li>
+              <li class="filter__radio-item">
+                <label class="filter__radio-container">
+                  <input class="visually-hidden filter__radio-input" type="radio" name="power" value="network">
+                  <span class="filter__radio-mark"></span>
+                  <span class="filter__radio-label">Сетевые</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter__button" type="submit">Показать</button>
+        </form>
+
+        <div class="catalog__container">
+
+          <!-- Сортировка -->
+          <fieldset class="filter__fieldset">
+            <select class="filter__select" aria-label="Сортировка.">
+              <option value="popular">Сортировать</option>
+              <option value="cheap">по увеличению цены</option>
+              <option value="expensive">по уменьшению цены</option>
+              <option value="name">по названию</option>
+            </select>
+          </fieldset>
+
+          <!-- Каталог товаров -->
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosch-bfg-3000.png" alt="Перфоратор BOSCH BFG 3000">
+              <h2 class="catalog__item-title">Перфоратор BOSCH BFG 3000</h2>
+              <span class="catalog__item-button">15500 ₽</span>
             </li>
           </ul>
-        </fieldset>
 
-        <!-- Фильтр по типу питания -->
-        <fieldset class="filter__fieldset">
-          <legend class="filter__title">ПИТАНИЕ</legend>
-          <ul class="filter__radio-list">
-            <li class="filter__radio-item">
-              <label class="filter__radio-container">
-                <input class="visually-hidden filter__radio-input" type="radio" name="power" value="battery" checked>
-                <span class="filter__radio-mark"></span>
-                <span class="filter__radio-label">Аккумуляторные</span>
-              </label>
-            </li>
-            <li class="filter__radio-item">
-              <label class="filter__radio-container">
-                <input class="visually-hidden filter__radio-input" type="radio" name="power" value="network">
-                <span class="filter__radio-mark"></span>
-                <span class="filter__radio-label">Сетевые</span>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+        </div>
 
 
 
-      </form>
+
+      </div>
+
+
     </section>
 
     <!-- Блок services -->
