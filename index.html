@@ -156,11 +156,12 @@
 
     <section class="catalog">
       <h1 class="catalog__title">ПЕРФОРАТОРЫ</h1>
+
       <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
 
+        <!-- Фильтр по цене -->
         <fieldset class="filter__fieldset">
           <legend class="filter__title">ЦЕНА</legend>
-
           <div class="filter__range">
             <div class="filter__range-scale">
               <div class="filter__range-bar" style="left: 0px; width: 138px">
@@ -183,8 +184,71 @@
               <input class="filter__range-input" type="number" value="30000" name="max-price" id="max-price">
             </label>
           </div>
-
         </fieldset>
+
+        <!-- Фильтр по производителям -->
+        <fieldset class="filter__fieldset filter__fieldset_manufacturer">
+          <ledend class="filter__title">ПРОИЗВОДИТЕЛИ</ledend>
+          <ul class="filter__checkbox-list">
+            <li class="filter__checkbox-item">
+              <label class="filter__checkbox-container">
+                <input class="visually-hidden filter__checkbox-input" type="checkbox" name="bosch" checked>
+                <span class="filter__checkbox-mark"></span>
+                <span class="filter__checkbox-label">BOSCH</span>
+              </label>
+            </li>
+            <li class="filter__checkbox-item">
+              <label class="filter__checkbox-container">
+                <input class="visually-hidden filter__checkbox-input" type="checkbox" name="interskol">
+                <span class="filter__checkbox-mark"></span>
+                <span class="filter__checkbox-label">ИНТЕРСКОЛ</span>
+              </label>
+            </li>
+            <li class="filter__checkbox-item">
+              <label class="filter__checkbox-container">
+                <input class="visually-hidden filter__checkbox-input" type="checkbox" name="makita" checked>
+                <span class="filter__checkbox-mark"></span>
+                <span class="filter__checkbox-label">MAKIta</span>
+              </label>
+            </li>
+            <li class="filter__checkbox-item">
+              <label class="filter__checkbox-container">
+                <input class="visually-hidden filter__checkbox-input" type="checkbox" name="dewalt">
+                <span class="filter__checkbox-mark"></span>
+                <span class="filter__checkbox-label">Dewalt</span>
+              </label>
+            </li>
+            <li class="filter__checkbox-item">
+              <label class="filter__checkbox-container">
+                <input class="visually-hidden filter__checkbox-input" type="checkbox" name="hitachi">
+                <span class="filter__checkbox-mark"></span>
+                <span class="filter__checkbox-label">Hitachi</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <!-- Фильтр по типу питания -->
+        <fieldset class="filter__fieldset">
+          <legend class="filter__title">ПИТАНИЕ</legend>
+          <ul class="filter__radio-list">
+            <li class="filter__radio-item">
+              <label class="filter__radio-container">
+                <input class="visually-hidden filter__radio-input" type="radio" name="power" value="battery" checked>
+                <span class="filter__radio-mark"></span>
+                <span class="filter__radio-label">Аккумуляторные</span>
+              </label>
+            </li>
+            <li class="filter__radio-item">
+              <label class="filter__radio-container">
+                <input class="visually-hidden filter__radio-input" type="radio" name="power" value="network">
+                <span class="filter__radio-mark"></span>
+                <span class="filter__radio-label">Сетевые</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
 
 
       </form>
