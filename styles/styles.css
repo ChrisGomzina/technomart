@@ -943,10 +943,13 @@
 .catalog__list {
   padding: 0;
   margin-top: 32px;
+  margin-bottom: 30px;
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 270px);
   grid-template-rows: repeat(3, 380px);
+  column-gap: 30px;
+  row-gap: 29px;
 }
 
 .catalog__item {
@@ -970,7 +973,19 @@
   color: #293449;
 }
 
-.catalog__item-button {
+.catalog__last-price {
+  margin-left: 75px;
+  margin-bottom: 9px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-decoration-line: line-through;
+  text-transform: uppercase;
+  color: #A9A9A9;
+}
+
+.catalog__price {
   display: inline-block;
   margin-left: 38px;
   width: 121px;
@@ -990,7 +1005,7 @@
   align-items: center;
 }
 
-.catalog__item-button::after {
+.catalog__price::after {
   content: '';
 	height: 0;
 	width: 0;
