@@ -1533,4 +1533,140 @@
   text-decoration: underline;
 }
 
+/* Стили для модального окна */
+.popup {
+  box-sizing: border-box;
+  position: absolute;
+  top: 12px;
+  right: 4px;
+  z-index: 1;
+  width: 360px;
+  padding: 21px 29px 35px 31px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
 
+.popup__title {
+  margin: 0;
+  margin-bottom: 47px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.popup__input {
+  box-sizing: border-box;
+  width: 300px;
+  padding-top: 7px;
+  padding-left: 13px;
+  padding-bottom: 5px;
+  margin-bottom: 7px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.popup__input:last-of-type {
+  margin-bottom: 11px;
+}
+
+.popup__input::placeholder {
+  color: #000000;
+}
+
+.popup__container {
+  margin-bottom: 39px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.popup__checkbox-container {
+  margin-left: 30px;
+  position: relative;
+  display: block;
+}
+
+.popup__checkbox-mark {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 1px;
+  left: -30px;
+  box-sizing: border-box;
+  border: 2px solid #3D546F;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.popup__checkbox-mark:hover {
+  opacity: 0.6;
+}
+
+.popup__checkbox-mark:disabled {
+  opacity: 0.2;
+}
+
+.popup__checkbox-input:focus + .popup__checkbox-mark {
+  opacity: 0.6;
+}
+
+.popup__checkbox-input[type="checkbox"]:checked + .popup__checkbox-mark {
+  background-image: url(../images/checkbox-mark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 9px ;
+}
+
+.popup__checkbox-label {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.popup__fogot-password {
+  margin-right: 60px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.popup__fogot-password:hover {
+  opacity: 0.6;
+}
+
+.popup__fogot-password:focus {
+  outline: 2px solid #000000;
+}
+
+.button_type_green {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+  background-color: #63A63E;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2px;
+}
+
+.button_type_white {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: #32425C;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.popup__button {
+  box-sizing: border-box;
+  width: 145px;
+  padding: 11px 26px 11px 44px;
+}
