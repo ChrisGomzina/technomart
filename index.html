@@ -32,7 +32,7 @@
         <input class="search__input" type="text" placeholder="Поиск:">
         <button class="search__button">Войти</button>
 
-        <!-- Модальное окно авторизации -->
+        <!-- Модальное окно авторизации. Чтобы открыть, необходимо добавить класс popup_opened -->
         <div class="popup">
           <h2 class="popup__title">личный кабинет</h2>
           <button class="popup__close-button">
@@ -61,6 +61,21 @@
             </div>
 
           </form>
+        </div>
+
+        <!-- Модальное окно авторизованного пользователя. Чтобы открыть, необходимо добавить класс popup_opened -->
+        <div class="popup">
+          <h2 class="popup__greeting">Здравствуйте, <br>Равшан Джамшутович</h2>
+          <button class="popup__close-button">
+            <span class="visually-hidden">Закрыть форму.</span>
+          </button>
+
+          <div class="popup__link-container">
+            <a class="popup__link" href="#">мои заказы</a>
+            <a class="popup__link" href="#">личный кабинет</a>
+          </div>
+
+          <a class="popup__button-exit button_type_white" href="#">выйти</a>
         </div>
 
       </div>
@@ -108,6 +123,7 @@
     <!-- Блок с навигацией по товарам -->
     <ul class="products-navigation__list">
       <li class="products-navigation__item products-navigation__item_materials">
+        <div class="ribbon">new</div>
         <h2 class="products-navigation__item-title">материалы</h2>
         <a class="products-navigation__item-button" href="#">на любой вкус</a>
       </li>
@@ -302,6 +318,7 @@
           <ul class="catalog__list">
             <li class="catalog__item">
               <a class="catalog__card" href="#">
+                <div class="ribbon ribbon_type_card">new</div>
                 <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosch-bfg-3000.png" alt="Перфоратор BOSCH BFG 3000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
@@ -326,6 +343,7 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__card" href="#">
+                <div class="ribbon ribbon_type_card">new</div>
                 <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosh-bfg-6000.png" alt="Перфоратор BOSCH BFG 2000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
@@ -349,6 +367,7 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__card" href="#">
+                <div class="ribbon ribbon_type_card">new</div>
                 <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosh-bfg-6000.png" alt="Перфоратор BOSCH BFG 6000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
@@ -371,6 +390,7 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__card" href="#">
+                <div class="ribbon ribbon_type_card">new</div>
                 <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosh-bfg-6000.png" alt="Перфоратор BOSCH BFG 3000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
@@ -395,6 +415,7 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__card" href="#">
+                <div class="ribbon ribbon_type_card">new</div>
                 <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosh-bfg-6000.png" alt="Перфоратор BOSCH BFG 2000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
