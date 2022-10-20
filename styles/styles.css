@@ -1547,6 +1547,29 @@
   border-radius: 2px;
 }
 
+.popup__close-button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background-color: inherit;
+  background-image: url(../images/close-button.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.popup__close-button:hover {
+  opacity: 0.6;
+}
+
+.popup__close-button:focus {
+  outline: 2px solid #000000;
+}
+
+
 .popup__title {
   margin: 0;
   margin-bottom: 47px;
@@ -1561,11 +1584,22 @@
   width: 300px;
   padding-top: 7px;
   padding-left: 13px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
   margin-bottom: 7px;
   font-family: inherit;
   font-size: 16px;
   line-height: 24px;
+  border: 1px solid #3D546F;
+  border-radius: 2px;
+}
+
+.popup__input:hover {
+  border-color: #63A63E;
+}
+
+.popup__input:focus {
+  border-color: #63A63E;
+  outline: 1px solid #FFBF47;
 }
 
 .popup__input:last-of-type {
@@ -1641,6 +1675,11 @@
   outline: 2px solid #000000;
 }
 
+.popup__buttons-container {
+  display: flex;
+  gap: 5px;
+}
+
 .button_type_green {
   font-family: inherit;
   font-weight: 700;
@@ -1652,6 +1691,20 @@
   text-transform: uppercase;
   border: none;
   border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button_type_green:hover {
+  background-color: #5FBB2D;
+}
+
+.button_type_green:active {
+  background-color: #518534;
+}
+
+.button_type_green:focus {
+  background-color: #5FBB2D;
 }
 
 .button_type_white {
@@ -1663,10 +1716,37 @@
   color: #32425C;
   text-transform: uppercase;
   text-decoration: none;
+  border: 2px solid #63A63E;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button_type_white:hover {
+  border-color: #32425C;
+}
+
+.button_type_white:active {
+  color: #C5C5C5;
+  border-color: #C5C5C5;
+}
+
+.button_type_white:focus {
+  border-color: #32425C;
 }
 
 .popup__button {
   box-sizing: border-box;
   width: 145px;
   padding: 11px 26px 11px 44px;
+  background-image: url(../images/icon-login-white.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: top 11px left 24px;
+}
+
+.popup__register {
+  box-sizing: border-box;
+  width: 145px;
+  padding: 9px 7px 9px 15px;
 }
