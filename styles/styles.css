@@ -199,6 +199,70 @@
   outline: 2px solid #000000;
 }
 
+.search__button_display_none {
+  display: none;
+}
+
+/* Стили для меню авторизованного пользователя */
+.search__authorized-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search__authorized-menu_display_none {
+  display: none;
+}
+
+.search__authorized-foto {
+  margin-right: 4px;
+}
+
+.search__authorized-link {
+  margin-right: 19px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F1F5F7;
+  text-decoration: none;
+}
+
+.search__authorized-link:hover {
+  opacity: 0.7;
+}
+
+.search__authorized-link:active {
+  opacity: 0.5;
+}
+
+.search__authorized-link:focus {
+  outline: 2px solid #000000;
+}
+
+.search__authorized-button {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  background-color: inherit;
+  background-image: url(../images/icon-logout.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+.search__authorized-button:hover {
+  opacity: 0.7;
+}
+
+.search__authorized-button:active {
+  opacity: 0.5;
+}
+
+.search__authorized-button:focus {
+  outline: 2px solid #000000;
+}
+
 /* Стили для блока navigation блока header */
 .navigation__container {
   background-color: #3D546F;
@@ -259,6 +323,13 @@
   list-style-type: none;
 }
 
+.user-navigation__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
 .user-navigation__button_favorite, .user-navigation__button_basket {
   border: none;
   background-color: inherit;
@@ -293,6 +364,23 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.user-navigation__counter_favorite, .user-navigation__counter_basket {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.user-navigation__counter_basket {
+  margin-right: 8px;
+}
+
+.user-navigation__counter_display_none {
+  display: none;
 }
 
 .user-navigation__button_checkout {
@@ -1822,6 +1910,7 @@
   justify-content: center;
   align-items: center;
   background-color: #EE3643;
+  z-index: 1;
 }
 
 .ribbon_type_card {

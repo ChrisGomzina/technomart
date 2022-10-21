@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ТЕХНОМАРТ</title>
   <link rel="stylesheet" href="./styles/styles.css">
   <link rel="icon" href="favicon.ico">
@@ -30,7 +29,19 @@
           <img class="icon" width="220" height="50" src="./images/logo.jpg" alt="Логотип магазина Техномарт.">
         </a>
         <input class="search__input" type="text" placeholder="Поиск:">
+
+        <!-- Чтобы увидеть меню авторизованного пользователя, нужно скрыть кнопку "войти" классом search__button_display_none -->
         <button class="search__button">Войти</button>
+
+        <!-- Чтобы увидеть меню авторизованного пользователя, нужно убрать класс search__authorized-menu_display_none -->
+        <div class="search__authorized-menu search__authorized-menu_display_none">
+          <a class="search__authorized-link" href="#">
+            <img class="search__authorized-foto" width="16" height="16" src="./images/icon-user.svg" alt="Фото авторизованного пользователя."> Равшан Джамшутович
+          </a>
+          <button class="search__authorized-button">
+            <span class="visually-hidden">Выйти из личного кабинета.</span>
+          </button>
+        </div>
 
         <!-- Модальное окно авторизации. Чтобы открыть, необходимо добавить класс popup_opened -->
         <div class="popup">
@@ -44,7 +55,8 @@
             <input class="popup__input" type="text" name="login-input" id="login-input" placeholder="Логин" required>
 
             <label class="visually-hidden" for="password-input">Поле ввода пароля.</label>
-            <input class="popup__input" type="password" name="password-input" id="password-input" placeholder="Пароль" required>
+            <input class="popup__input" type="password" name="password-input" id="password-input" placeholder="Пароль"
+              required>
 
             <div class="popup__container">
               <label class="popup__checkbox-container">
@@ -102,11 +114,17 @@
             <button class="user-navigation__button_favorite">
               <span class="visually-hidden">Избранное.</span>
             </button>
+
+            <!-- Чтобы увидеть колличество товаров, добавленных в избранное, нужно ублать класс user-navigation__counter_display_none -->
+            <span class="user-navigation__counter_favorite user-navigation__counter_display_none">12</span>
           </li>
           <li class="user-navigation__item">
             <button class="user-navigation__button_basket">
               <span class="visually-hidden">Корзина.</span>
             </button>
+
+            <!-- Чтобы увидеть колличество товаров в корзине, нужно убрать класс user-navigation__counter_display_none -->
+            <span class="user-navigation__counter_basket user-navigation__counter_display_none">2</span>
           </li>
           <li class="user-navigation__item">
             <button class="user-navigation__button_checkout">Оформить заказ</button>
@@ -319,7 +337,8 @@
             <li class="catalog__item">
               <a class="catalog__card" href="#">
                 <div class="ribbon ribbon_type_card">new</div>
-                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosch-bfg-3000.png" alt="Перфоратор BOSCH BFG 3000.">
+                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosch-bfg-3000.png"
+                  alt="Перфоратор BOSCH BFG 3000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
                   <button class="catalog__button_bookmark">В закладки</button>
@@ -331,7 +350,8 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__card" href="#">
-                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosh-bfg-6000.png" alt="Перфоратор BOSCH BFG 6000.">
+                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bocsh-bfg-6000.png"
+                  alt="Перфоратор BOSCH BFG 6000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
                   <button class="catalog__button_bookmark">В закладки</button>
@@ -344,7 +364,8 @@
             <li class="catalog__item">
               <a class="catalog__card" href="#">
                 <div class="ribbon ribbon_type_card">new</div>
-                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosh-bfg-6000.png" alt="Перфоратор BOSCH BFG 2000.">
+                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bocsh-bfg-6000.png"
+                  alt="Перфоратор BOSCH BFG 2000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
                   <button class="catalog__button_bookmark">В закладки</button>
@@ -355,7 +376,8 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__card" href="#">
-                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosh-bfg-6000.png" alt="Перфоратор BOSCH BFG 3000.">
+                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bocsh-bfg-6000.png"
+                  alt="Перфоратор BOSCH BFG 3000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
                   <button class="catalog__button_bookmark">В закладки</button>
@@ -368,7 +390,8 @@
             <li class="catalog__item">
               <a class="catalog__card" href="#">
                 <div class="ribbon ribbon_type_card">new</div>
-                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosh-bfg-6000.png" alt="Перфоратор BOSCH BFG 6000.">
+                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bocsh-bfg-6000.png"
+                  alt="Перфоратор BOSCH BFG 6000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
                   <button class="catalog__button_bookmark">В закладки</button>
@@ -379,7 +402,8 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__card" href="#">
-                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosh-bfg-2000.png" alt="Перфоратор BOSCH BFG 2000.">
+                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosch-bfg-2000.png"
+                  alt="Перфоратор BOSCH BFG 2000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
                   <button class="catalog__button_bookmark">В закладки</button>
@@ -391,7 +415,8 @@
             <li class="catalog__item">
               <a class="catalog__card" href="#">
                 <div class="ribbon ribbon_type_card">new</div>
-                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosh-bfg-6000.png" alt="Перфоратор BOSCH BFG 3000.">
+                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bocsh-bfg-6000.png"
+                  alt="Перфоратор BOSCH BFG 3000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
                   <button class="catalog__button_bookmark">В закладки</button>
@@ -403,7 +428,8 @@
             </li>
             <li class="catalog__item">
               <a class="catalog__card" href="#">
-                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosch-bfg-3000.png" alt="Перфоратор BOSCH BFG 6000.">
+                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosch-bfg-3000.png"
+                  alt="Перфоратор BOSCH BFG 6000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
                   <button class="catalog__button_bookmark">В закладки</button>
@@ -416,7 +442,8 @@
             <li class="catalog__item">
               <a class="catalog__card" href="#">
                 <div class="ribbon ribbon_type_card">new</div>
-                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bosh-bfg-6000.png" alt="Перфоратор BOSCH BFG 2000.">
+                <img class="catalog__item-image" width="216" height="180" src="./images/catalog-bocsh-bfg-6000.png"
+                  alt="Перфоратор BOSCH BFG 2000.">
                 <div class="catalog__buttons-container">
                   <button class="catalog__button_buy">КУПИТЬ</button>
                   <button class="catalog__button_bookmark">В закладки</button>
@@ -454,20 +481,24 @@
     <section class="services">
 
       <h1 class="services__title">Сервисы</h1>
-      <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+      <p class="services__text">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех
+        сил, чтобы сделать ваши покупки приятными.</p>
 
       <ul class="services__list">
         <li class="services__item services__item_dilivery">
           <h2 class="services__item-title">Доставка</h2>
-          <p class="services__item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+          <p class="services__item-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+            бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
         </li>
         <li class="services__item services__item_guarantee">
           <h2 class="services__item-title">Гарантия</h2>
-          <p class="services__item-text">Вы в течение года можете написать нам письмо с просьбой вернуть сумму оплаты, и мы полностью возместим вам стоимось товара</p>
+          <p class="services__item-text">Вы в течение года можете написать нам письмо с просьбой вернуть сумму оплаты, и
+            мы полностью возместим вам стоимось товара</p>
         </li>
         <li class="services__item services__item_credit">
           <h2 class="services__item-title">Кредит</h2>
-          <p class="services__item-text">Вы можете оформить кредит прямо на сайте! Для этого нужно выбрать понравившийся товар и заполнить поля и ждать результата одобрения кредита. <br>Все как в банке, только проще!</p>
+          <p class="services__item-text">Вы можете оформить кредит прямо на сайте! Для этого нужно выбрать понравившийся
+            товар и заполнить поля и ждать результата одобрения кредита. <br>Все как в банке, только проще!</p>
         </li>
       </ul>
 
@@ -478,15 +509,18 @@
 
       <div class="information__about">
         <h2 class="information__title">КОМПАНИЯ «Техномарт»</h2>
-        <p class="information__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-        <p class="information__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+        <p class="information__text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p class="information__text">Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со
+          многими транспортными компаниями:</p>
         <a class="information__button" href="#">о компании</a>
       </div>
 
       <div class="information__contacts">
         <h2 class="information__title">КОНТАКТЫ</h2>
-        <p class="information__text">Вы можете забрать товар сами,  заехав в наш офис:</p>
-        <img class="information__map" width="500" height="347" src="./images/information-map.jpg" alt="Улица Большая Конюшенная, дом 19/8.">
+        <p class="information__text">Вы можете забрать товар сами, заехав в наш офис:</p>
+        <img class="information__map" width="500" height="347" src="./images/information-map.jpg"
+          alt="Улица Большая Конюшенная, дом 19/8.">
       </div>
 
     </section>
@@ -506,12 +540,14 @@
         <ul class="footer__socials">
           <li class="footer__social-item">
             <a class="footer__social-link" href="#">
-              <img class="footer__social-logo" width="22" height="22" src="./images/logo-pinterest.svg" alt="Логотип pinterest.">
+              <img class="footer__social-logo" width="22" height="22" src="./images/logo-pinterest.svg"
+                alt="Логотип pinterest.">
             </a>
           </li>
           <li class="footer__social-item">
             <a class="footer__social-link" href="#">
-              <img class="footer__social-logo" width="20" height="20" src="./images/logo-vk.svg" alt="Логотип Вконтакте.">
+              <img class="footer__social-logo" width="20" height="20" src="./images/logo-vk.svg"
+                alt="Логотип Вконтакте.">
             </a>
           </li>
           <li class="footer__social-item">
@@ -529,7 +565,8 @@
         <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscription__label" for="subscription-email">Получайте лучшие предложения</label>
           <p class="subscription__container">
-            <input class="subscription__input" placeholder="email@example.com" type="email" name="subscription-email" id="subscription-email" required>
+            <input class="subscription__input" placeholder="email@example.com" type="email" name="subscription-email"
+              id="subscription-email" required>
             <button class="subscription__button" type="submit">
               <span class="visually-hidden">Подписаться.</span>
             </button>
@@ -542,9 +579,11 @@
 
     <div class="footer__container">
       <p class="footer__copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
-      <p class="footer__copyright">Разработано — <a class="footer__link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+      <p class="footer__copyright">Разработано — <a class="footer__link"
+          href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
     </div>
   </footer>
 
 </body>
+
 </html>
