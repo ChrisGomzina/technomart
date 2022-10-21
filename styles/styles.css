@@ -1444,6 +1444,22 @@
   background-color: #BA2732;
 }
 
+.information__map-link {
+  display: inline-block;
+}
+
+.information__map-link:hover {
+  opacity: 0.7;
+}
+
+.information__map-link:active {
+  opacity: 0.5;
+}
+
+.information__map-link:focus {
+  outline: 2px solid #000000;
+}
+
 /* Стили для футера */
 .footer {
   background: linear-gradient(to bottom, #32425C 0 216px,  #293449 216px 276px);
